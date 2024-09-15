@@ -1,11 +1,11 @@
-function acceptFriendReq(uid) {
+function getFriendsReqs() {
     return new Promise((resolve, reject) => {
         $.ajax({
             method: 'POST',
-            url: '/acceptFriendReq',
+            url: '/getFriendsReqs',
             contentType: 'application/json',
             data: JSON.stringify({ 
-                id: uid
+                str: '1'
             }),
             success: (data) => {
                 resolve(data);

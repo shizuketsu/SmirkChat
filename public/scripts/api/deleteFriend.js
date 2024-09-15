@@ -1,8 +1,8 @@
-function acceptFriendReq(uid) {
+function deleteFriend(uid) {
     return new Promise((resolve, reject) => {
         $.ajax({
             method: 'POST',
-            url: '/acceptFriendReq',
+            url: '/deleteFriend',
             contentType: 'application/json',
             data: JSON.stringify({ 
                 id: uid

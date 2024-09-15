@@ -1,13 +1,14 @@
-function acceptFriendReq(uid) {
+function exitChannels(keyOrUID) {
     return new Promise((resolve, reject) => {
         $.ajax({
             method: 'POST',
-            url: '/acceptFriendReq',
+            url: '/exitChannel',
             contentType: 'application/json',
             data: JSON.stringify({ 
-                id: uid
+                keyOrUID: keyOrUID
             }),
             success: (data) => {
+                console.log(data);
                 resolve(data);
             },
             error: (jqXHR, textStatus, errorThrown) => {

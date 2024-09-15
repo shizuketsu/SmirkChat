@@ -1,11 +1,12 @@
-function acceptFriendReq(uid) {
+function joinToChannel(str, blockID) {
     return new Promise((resolve, reject) => {
         $.ajax({
             method: 'POST',
-            url: '/acceptFriendReq',
+            url: '/joinToChannel',
             contentType: 'application/json',
             data: JSON.stringify({ 
-                id: uid
+                str: str,
+                blockID: blockID
             }),
             success: (data) => {
                 resolve(data);

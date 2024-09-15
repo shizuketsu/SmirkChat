@@ -1,8 +1,8 @@
-function acceptFriendReq(uid) {
+function closeOGFriendReq(uid) {
     return new Promise((resolve, reject) => {
         $.ajax({
             method: 'POST',
-            url: '/acceptFriendReq',
+            url: '/closeOGFriendReq',
             contentType: 'application/json',
             data: JSON.stringify({ 
                 id: uid

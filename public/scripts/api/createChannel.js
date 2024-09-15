@@ -1,12 +1,11 @@
-function acceptFriendReq(uid) {
+function createChannelFN(fdata) {
     return new Promise((resolve, reject) => {
         $.ajax({
             method: 'POST',
-            url: '/acceptFriendReq',
-            contentType: 'application/json',
-            data: JSON.stringify({ 
-                id: uid
-            }),
+            url: '/createChannel',
+            data: fdata,
+            processData: false,
+            contentType: false,
             success: (data) => {
                 resolve(data);
             },

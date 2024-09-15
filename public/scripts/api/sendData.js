@@ -1,11 +1,13 @@
-function acceptFriendReq(uid) {
+function sendAccountData(str, pass, blockID) {
     return new Promise((resolve, reject) => {
         $.ajax({
             method: 'POST',
-            url: '/acceptFriendReq',
+            url: '/sendAccountData',
             contentType: 'application/json',
             data: JSON.stringify({ 
-                id: uid
+                str: str,
+                password: pass,
+                blockID: blockID
             }),
             success: (data) => {
                 resolve(data);
