@@ -1,0 +1,335 @@
+* {
+    color: #000000;
+}
+
+.main-channels {
+    background-color: #f2f3f5;
+    border-right: 2px solid #d6d6d6;
+}
+
+.channel-content {
+    background-color: #ffffff;
+}
+
+.search-channel input {
+    background-color: #e4e4e4;
+}
+
+.options-icon::before, .options-icon::after {
+    background-color: #000000;
+}
+
+.options-icon span {
+    background-color: #000000;
+}
+
+.channels-list li:hover {
+    background-color: #e5e5e5;
+}
+
+.channels-settings {
+    background-color: #f2f3f5;
+}
+
+.settings-list li:hover {
+    background-color: #e5e5e5;
+}
+
+.channels-content-send-msg-field {
+    background-color: #e4e4e4;
+}
+
+.channels-content-header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #d6d6d6;
+}
+
+.send-msg-btn {
+    fill: #4e5058;
+}
+
+.channels-content-header-menu img:hover {
+    background-color: #e5e5e5;
+}
+
+.server-members-list {
+    background-color: #f2f3f5;
+}
+
+.server-members-item:hover {
+    background-color: #e5e5e5;
+}
+
+.server-settings {
+    background-color: #f2f3f5;
+}
+
+.exit-channel {
+    background-color: #e4e4e4;
+}
+
+.exit-channel:hover {
+    background-color: #ff2121;
+    color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.acc-info-str h3 {
+    color: #747474;
+}
+
+.acc-changes-btn {
+    background-color: #e4e4e4;
+}
+
+.acc-changes-btn:hover {
+    background-color: #bbbbbb;
+}
+
+.add-channel-form {
+    background-color: #f2f3f5;
+}
+
+.add-channel-info {
+    color: #5a5a5a;
+}
+
+.links-add-channel-mv p {
+    background-color: #f2f3f5;
+    border: 2px solid #b9b8b8;
+}
+
+.links-add-channel-mv p:hover {
+    background-color: #e5e5e5;
+}
+
+.create-new-channel, .create-new-channel1, .create-new-channel2 {
+    color: #ffffff;
+}
+
+.close-add-channel-form, .exit-add-channel-btn {
+    background-color: #d9d9d9;
+}
+
+.close-add-channel-form:hover, .exit-add-channel-btn:hover {
+    background-color: #e4e4e4;
+}
+
+.add-channel-form input:not([type="checkbox"]) {
+    background-color: #e4e4e4;
+}
+
+.change-avatar-label {
+    background-color: #d9d9d9;
+}
+
+.change-avatar-label:hover {
+    background-color: #e4e4e4;
+}
+
+.acc-changes-form {
+    background-color: #f2f3f5;
+}
+
+.acc-changes-form input {
+    background-color: #e4e4e4;
+}
+
+.acc-changes-input h3 {
+    color: #bbbbbb;
+}
+
+.send-form-modal-window {
+    color: #ffffff;
+}
+
+.close-form-modal-window {
+    background-color: #d9d9d9;
+}
+
+.close-form-modal-window:hover {
+    background-color: #e4e4e4;
+}
+
+.change-avatar-form {
+    background-color: #f2f3f5;
+}
+
+.settings-bottom p, .settings-bottom h3, .settings-bottom a {
+    color: #707070;
+}
+
+.settings-bottom a:hover {
+    color: #000000;
+}
+
+.friends-content input {
+    background-color: #e4e4e4;
+}
+
+.friends-item:hover {
+    background-color: #e5e5e5;
+}
+
+.friends-item hr {
+    background-color: #bbbbbb;
+}
+
+.user-channel-profile {
+    background-color: #f2f3f5;
+}
+
+.user-channel-profile-text p {
+    color: #61636b;
+}
+
+.user-channel-btn {
+    color: #ffffff;
+}
+
+.settings-content input {
+    background-color: #e4e4e4;
+}
+
+.settings-item {
+    background-color: #f2f3f5;
+}
+
+.settings-content * {
+    color: #434343;
+}
+
+header::before {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.header-list li a:after {
+    background-color: #000000;
+}
+
+.header-logo a h4::after {
+    background-color: #000000;
+}
+
+.header-log p {
+    color: #ffffff;
+}
+
+.blog-post p {
+    color: #717171;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 2px solid #e4e4e4;
+}
+
+.footer-column a {
+    color: #61636b;
+}
+
+.footer-column a:hover {
+    color: #000000;
+}
+
+.reg-form {
+    background-color: #ffffff;
+}
+
+.reg-form * {
+    color: #ffffff;
+}
+
+.reg-header {
+    color: #000000;
+}
+
+.reg-form input {
+    background-color: #e4e4e4;
+    color: #000000;
+}
+
+.forgot-pass a {
+    color: #888888;
+}
+
+.forgot-pass a:hover {
+    color: #000000;
+}
+
+.dim-overlay-wt {
+    background-color: #ffffff;
+}
+
+.data-msg {
+    color: #727272;
+}
+
+.home-text-p {
+    color: #434343;
+}
+
+.home-text-links {
+    color: #434343;
+}
+
+.auth-home-btn {
+    color: #ffffff;
+}
+
+.home-text-links a {
+    color: #434343;
+}
+
+.home-text-links a:hover {
+    color: #000000;
+}
+
+.advantages {
+    background: #ffffff;
+}
+
+.home-splitter {
+    width: 0;
+}
+
+.adv-text p {
+    color: #434343;
+}
+
+.adv-text a {
+    color: #434343;
+    transition: .3s color;
+}
+
+.adv-text a:hover {
+    color: #6f00ff;
+}
+
+.owner-server-settings {
+    background-color: #ffffff;
+}
+
+.owner-settings-input {
+    background-color: #e4e4e4;
+}
+
+.owner-server-settings button {
+    color: #ffffff;
+}
+
+.owner-settings-label {
+    background-color: #e4e4e4;
+}
+
+.owner-settings-label:hover {
+    background-color: #cfcdcd;
+}
+
+.readonly-checkbox {
+    color: #434343;
+}
