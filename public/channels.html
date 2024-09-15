@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmirkChat | Channels</title>
+    <link rel="icon" href="./img/logo/favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/channels.css">
+    <link rel="stylesheet" href="./css/channelsonly.css">
+    <script src="./scripts/dom/settings/whitetheme.js"></script>
+    <script src="./scripts/dom/settings/showowner.js"></script>
+</head>
+<body>
+    <main>
+        <div class="channels-body">
+            <div class="main-channels">
+                <div class="channels-header">
+                    <div class="options-icon">
+                        <span></span>
+                    </div>
+                    <div class="search-channel">
+                        <input type="text" placeholder="Поиск" id="search-input">
+                    </div>
+                </div>
+                <ul class="channels-list" id="channels-list"></ul>
+            </div>
+            <div class="channel-content">
+                <div class="channels-content-header" style="display: none;">
+                    <div class="channels-content-header-base-info">
+                        <svg display="none">
+                            <symbol viewBox="0 0 24 24" id="gotoMainPage">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                <g id="SVGRepo_iconCarrier"> <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" fill="#ffffff"/> </g>
+                            </symbol>
+                        </svg>
+                        <svg class="go-to-Main-Page">
+                            <use xlink:href="#gotoMainPage"></use>
+                        </svg>
+                        <img src="./img/channels/default.png" class="c-c-h-b-i-i" alt="">
+                        <h4></h4>
+                    </div>
+                    <div class="channels-content-header-menu" style="opacity: 1;visibility: visible;">
+                        <img src="./img/icons/members.png" id="server-members" alt="">
+                        <img src="./img/icons/ooptions.png" id="server-owner-settings" style="display: none;" alt="">
+                        <img src="./img/icons/options.png" id="server-setting" alt="">
+                    </div>
+                </div>
+                <div class="msgs-content">
+                    <ul class="messages-list"></ul>
+                </div>
+                <div class="channels-content-bottom">
+                    <div class="channels-content-bottom-body">
+                        <textarea id="msgTextArea" class="channels-content-send-msg-field" placeholder="Написать"></textarea>
+                        <div>
+                            <!-- <img src="./img/icons/files.png" id="files-msg-add-btn" alt=""> -->
+                            <svg display="none">
+                                <symbol viewBox="0 0 24 24" id="sendBtn">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g id="SVGRepo_iconCarrier"> <path d="M12.0004 18.5816V12.5M12.7976 18.754L15.8103 19.7625C17.4511 20.3118 18.2714 20.5864 18.7773 20.3893C19.2166 20.2182 19.5499 19.8505 19.6771 19.3965C19.8236 18.8737 19.4699 18.0843 18.7624 16.5053L14.2198 6.36709C13.5279 4.82299 13.182 4.05094 12.7001 3.81172C12.2814 3.60388 11.7898 3.60309 11.3705 3.80958C10.8878 4.04726 10.5394 4.8182 9.84259 6.36006L5.25633 16.5082C4.54325 18.086 4.18671 18.875 4.33169 19.3983C4.4576 19.8528 4.78992 20.2216 5.22888 20.394C5.73435 20.5926 6.55603 20.3198 8.19939 19.7744L11.2797 18.752C11.5614 18.6585 11.7023 18.6117 11.8464 18.5933C11.9742 18.5769 12.1036 18.5771 12.2314 18.5938C12.3754 18.6126 12.5162 18.6597 12.7976 18.754Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                </symbol>
+                            </svg>
+                            <svg class="send-msg-btn">
+                                <use xlink:href="#sendBtn"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="channels-settings" id="channels-settings">
+        <div class="mini-author-profile">
+            <img src="./img/users/11.png" class="mini-author-profile-img" id="substr-img-settings" alt="">
+            <div class="mini-author-profile-text">
+                <h3></h3>
+                <p>Тут должно быть био, но...</p>
+            </div>
+        </div>
+        <ul class="settings-list"></ul>
+        <div class="settings-bottom">
+            <h3><a href="/">SmirkChat © 2024</a></h3>
+            <p>Создано <a href="https://github.com/shizuketsu">Shizu</a></p>
+        </div>
+    </div>
+    <div class="add-channel-modal-window">
+        <form action="" method="post" class="add-channel-form" enctype="multipart/form-data">
+            <div class="start-add-channel">
+                <h2>Присоединитесь к каналу</h2>
+                <p class="add-channel-info">Вы можете создать или присоединиться к уже существующему каналу, на котором сможете общаться одновременно с несколькими людьми или же можете написать одному человеку и говорить с ним лично</p>
+                <div class="links-add-channel-mv">
+                    <p id="links-add-channel-mv1">Написать человеку</p>
+                    <p id="links-add-channel-mv2">Присоединиться к каналу</p>
+                </div>
+                <div class="add-channel-btns">
+                    <div class="close-add-channel-form">Отмена</div>
+                    <div class="create-new-channel1">Создать канал</div>
+                </div>
+            </div>
+            <div class="send-message-to-user">
+                <h2>Написать человеку</h2>
+                <p class="add-channel-info">После первого сообщения вы сможете добавить человека в друзья</p>
+                <input type="text" placeholder="Имя пользователя" name="userName">
+                <div class="add-channel-btns">
+                    <div class="exit-add-channel-btn">Назад</div>
+                    <button type="submit" class="create-new-channel">Отправить сообщение</button>
+                </div>
+            </div>
+            <div class="add-channel-block">
+                <h2>Присоединиться к каналу</h2>
+                <p class="add-channel-info">Вам нужно вставить особый ключ канала, чтобы присоединиться к нему</p>
+                <input type="text" placeholder="Ключ" name="key">
+                <div class="add-channel-btns">
+                    <div class="exit-add-channel-btn">Назад</div>
+                    <button type="submit" class="create-new-channel">Присоединиться</button>
+                </div>
+            </div>
+            <div class="create-channel">
+                <h2>Создать канал</h2>
+                <p class="add-channel-info">Напишите название сервера, его описание и добавьте изображение сервера. Если вам потребуется, вы сможете их изменить</p>
+                <input type="text" placeholder="Название" name="serverName" id="createChannelName">
+                <input type="text" placeholder="Описание" name="bio" id="createChannelBio">
+                <label for="readonly" class="readonly-checkbox">
+                    <input type="checkbox" id="readonly">
+                    Канал только для чтения
+                </label>
+                <div class="add-channel-btns">
+                    <div class="exit-add-channel-btn">Назад</div>
+                    <label for="change-avatar-input" class="change-avatar-label">
+                        Загрузить изображение
+                        <input type="file" name="avatar" id="change-avatar-input" accept="image/png">
+                    </label>
+                    <button type="submit" class="create-new-channel2">Создать</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="server-settings-mw">
+        <div class="server-settings">
+            <h2>serverName</h2>
+            <p>Владелец: userName</p>
+            <p>Био: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam minus aliquam, aliquid placeat nobis iure eligendi incidunt officia nisi ratione impedit consequuntur temporibus ipsa consectetur veniam. Voluptatem rem natus non.</p>
+            <p>Код приглашения: abobasaq</p>
+            <p>Айди канала: id</p>
+            <div class="exit-channel" id="exit-channel">Покинуть канал</div>
+        </div>
+    </div>
+    <div class="user-channel-profile-mw">
+        <div class="user-channel-profile">
+            <div class="user-channel-profile-top">
+                <div class="user-channel-profile-avatar">
+                    <img src="./img/users/17.png" alt="">
+                </div>
+                <div class="user-channel-profile-text">
+                    <h3>username</h3>
+                    <p>bio</p>
+                </div>
+            </div>
+            <div class="user-channel-profile-bot">
+                <div class="user-channel-btn">Написать сообщение</div>
+                <div class="user-channel-btn">Добавить в друзья</div>
+            </div>
+        </div>
+    </div>
+    <div class="server-members-list-mw">
+        <ul class="server-members-list">
+            <h2>Участники</h2>
+            <li class="server-members-item">
+                <img src="./img/users/17.png" class="server-members-avatar" alt="">
+                <div class="server-members-item-text">
+                    <div class="server-members-item-username"><p>Shizu</p></div>
+                    <div class="server-members-item-icons"><img src="./img/icons/owner.png" alt=""></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="owner-server-settings-mw">
+        <div class="owner-server-settings">
+            <h2>Настроить сервер</h2>
+            <ul class="owner-settings-list">
+                <li>
+                    <p>Название</p>
+                    <input type="text" class="owner-settings-input" id="server-name-settings">
+                </li>
+                <li>
+                    <p>Описание</p>
+                    <input type="text" class="owner-settings-input" id="server-desc-settings">
+                </li>
+                <li>
+                    <p>Изображение</p>
+                    <label for="change-server-avatar-input" class="owner-settings-label">
+                        Загрузить
+                        <input type="file" id="change-server-avatar-input" accept="image/png">
+                    </label>
+                </li>
+                <button id="sendServerChanges">Отправить</button>
+            </ul>
+        </div>
+    </div>
+    <div class="dim-overlay"></div>
+    <div class="dim-overlayR"></div>
+    <div class="dim-overlayRR"></div>
+    <div class="dim-overlayRRR"></div>
+    <div class="dim-overlayRRRR"></div>
+    <div class="dim-overlayRRRRR"></div>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./scripts/dom/substr.js"></script>
+    <script src="./scripts/api/getServerInfo.js"></script>
+    <script src="./scripts/api/deleteFriend.js"></script>
+    <script src="./scripts/api/closeOGFriendReq.js"></script>
+    <script src="./scripts/api/sendServerChanges.js"></script>
+    <script src="./scripts/dom/loadPersonalMembers.js"></script>
+    <script src="./scripts/api/redirectToChannels.js"></script>
+    <script src="./scripts/api/getServerMembers.js"></script>
+    <script src="./scripts/dom/loadServerMembers.js"></script>
+    <script src="./scripts/api/isFriend.js"></script>
+    <script src="./scripts/api/sendFriendReqTo.js"></script>
+    <script src="./scripts/dom/loadMsgs.js"></script>
+    <script src="./scripts/api/createChannel.js"></script>
+    <script src="./scripts/api/exitChannel.js"></script>
+    <script src="./scripts/api/getMessages.js"></script>
+    <script src="./scripts/api/getProfileInfo.js"></script>
+    <script src="./scripts/dom/loadAuthorProfile.js"></script>
+    <script src="./scripts/api/getChannels.js"></script>
+    <script src="./scripts/dom/loadChannels.js"></script>
+    <script src="./scripts/dom/loadChannelContent.js"></script>
+    <script src="./scripts/dom/search.js"></script>
+    <script src="./scripts/dom/settings.js"></script>
+    <script src="./scripts/dom/settingsList.js"></script>
+    <script src="./scripts/api/joinToChannel.js"></script>
+    <script src="./scripts/dom/sendMsg.js"></script>
+    <script src="./scripts/dom/channelsSettings.js"></script>
+</body>
+</html>

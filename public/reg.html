@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmirkChat | Reg</title>
+    <link rel="icon" href="./img/logo/favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/forms.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./scripts/dom/settings/whitetheme.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <div class="container-900px">
+            <form class="reg-form" action="./register" method="post">
+                <div class="reg-form-right">
+                    <h2 class="reg-header">Регистрация</h2>
+                    <input type="text" placeholder="Имя" name="userName" id="userName"><br>
+                    <input type="text" placeholder="Имейл" name="email" id="email"><br>
+                    <input type="password" placeholder="Пароль" name="pass" id="pass"><br>
+                    <button type="submit">Отправить</button>
+                </div>
+                <div class="reg-form-left">
+                    <h2>Есть аккаунт?</h2>
+                    <p>Если у вас есть аккаунт, давайте приступим сейчас!</p>
+                    <p class="reg-btn" id="auth-btn">Войти</p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./scripts/dom/header.js"></script>
+    <script src="./scripts/dom/menu.js"></script>
+    <script src="./scripts/api/getAuthLink.js"></script>
+    <script src="./scripts/dom/forms.js"></script>
+    <script src="./scripts/dom/footer.js"></script>
+</body>
+</html>

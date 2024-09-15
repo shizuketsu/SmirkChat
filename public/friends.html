@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmirkChat | Friends</title>
+    <link rel="icon" href="./img/logo/favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/channels.css">
+    <link rel="stylesheet" href="./css/channelsless.css">
+    <script src="./scripts/dom/settings/whitetheme.js"></script>
+</head>
+<body>
+    <main>
+        <div class="channels-body">
+            <div class="main-channels" style="visibility: hidden;opacity: 0;">
+                <div class="channels-header">
+                    <div class="options-icon">
+                        <span></span>
+                    </div>
+                    <div class="search-channel">
+                        <input type="text" placeholder="Поиск" id="search-input">
+                    </div>
+                </div>
+            </div>
+            <div class="channel-content active">
+                <div class="options-icon channelsless">
+                    <span></span>
+                </div>
+                <div class="friends-container">
+                    <div class="friends-content">
+                        <input type="text" placeholder="Поиск" id="search-friends">
+                        <h3 id="friends-counter2">Входящие запросы: 0</h3><br>
+                        <ul class="friends-list" id="friends-list2"></ul>
+                        <h3 id="friends-counter1">Всего друзей: 0</h3><br>
+                        <ul class="friends-list" id="friends-list1"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="channels-settings" id="channels-settings">
+        <div class="mini-author-profile">
+            <img src="./img/users/11.png" class="mini-author-profile-img" alt="">
+            <div class="mini-author-profile-text">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <ul class="settings-list"></ul>
+        <div class="settings-bottom">
+            <h3><a href="/">SmirkChat © 2024</a></h3>
+            <p>Создано <a href="https://github.com/shizuketsu">Shizu</a></p>
+        </div>
+    </div>
+    <div class="acc-changes-modal-window">
+        <form class="acc-changes-form">
+            <div class="acc-changes-form-text">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div class="acc-changes-input">
+                <input type="text" placeholder="Новое имя" id="mv-str-input">
+            </div>
+            <div class="acc-changes-input">
+                <input type="password" placeholder="Пароль" id="mv-pass-input">
+            </div>
+            <div class="modal-window-btns">
+                <button type="button" class="close-form-modal-window" id="close-form-modal-window">Закрыть</button>
+                <button type="submit" class="send-form-modal-window" id="send-form-modal-window">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <div class="user-channel-profile-mw">
+        <div class="user-channel-profile">
+            <div class="user-channel-profile-top">
+                <div class="user-channel-profile-avatar">
+                    <img src="./img/users/17.png" alt="">
+                </div>
+                <div class="user-channel-profile-text">
+                    <h3>username</h3>
+                    <p>bio</p>
+                </div>
+            </div>
+            <div class="user-channel-profile-bot">
+                <div class="user-channel-btn">Написать сообщение</div>
+                <div class="user-channel-btn">Добавить в друзья</div>
+            </div>
+        </div>
+    </div>
+    <div class="dim-overlay"></div>
+    <div class="dim-overlayRR"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./scripts/dom/substr.js"></script>
+    <script src="./scripts/api/closeFriendReq.js"></script>
+    <script src="./scripts/api/deleteFriend.js"></script>
+    <script src="./scripts/api/closeOGFriendReq.js"></script>
+    <script src="./scripts/api/sendFriendReqTo.js"></script>
+    <script src="./scripts/api/isFriend.js"></script>
+    <script src="./scripts/api/redirectToChannels.js"></script>
+    <script src="./scripts/api/acceptFriendReq.js"></script>
+    <script src="./scripts/api/getFriendsReqs.js"></script>
+    <script src="./scripts/api/getProfileInfo.js"></script>
+    <script src="./scripts/dom/loadAuthorProfile.js"></script>
+    <script src="./scripts/dom/settingsList.js"></script>
+    <script src="./scripts/dom/searchFriends.js"></script>
+    <script src="./scripts/api/getFriends.js"></script>
+    <script src="./scripts/dom/loadFriends.js"></script>
+    <script src="./scripts/dom/settingsChannelsless.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmirkChat | Friends</title>
+    <link rel="icon" href="./img/logo/favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/channels.css">
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/channelsless.css">
+    <script src="./scripts/dom/settings/whitetheme.js"></script>
+</head>
+<body>
+    <div class="dim-overlay-wt active"></div>
+    <main>
+        <div class="channels-body">
+            <div class="main-channels" style="visibility: hidden;opacity: 0;">
+                <div class="channels-header">
+                    <div class="options-icon">
+                        <span></span>
+                    </div>
+                    <div class="search-channel">
+                        <input type="text" placeholder="Поиск" id="search-input">
+                    </div>
+                </div>
+            </div>
+            <div class="channel-content active">
+                <div class="options-icon channelsless">
+                    <span></span>
+                </div>
+                <div class="settings-content">
+                    <ul class="settings-item" style="margin-bottom: 60px;text-align: center;padding: 10px;"><h5>Настройки</h5></ul>
+                    <section>
+                        <p class="setting-header">Конфиденциальность</p>
+                        <ul class="settings-item">
+                            <li class="setting">
+                                <div class="setting-text">Личные сообщения только от друзей</div>
+                                <label class="switch">
+                                    <input type="checkbox" name="lsfromnone">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p class="setting-header">Внешний вид</p>
+                        <ul class="settings-item">
+                            <li class="setting">
+                                <div class="setting-text">Включить белую тему</div>
+                                <label class="switch">
+                                    <input type="checkbox" name="whitetheme">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li class="setting">
+                                <div class="setting-text">Отображать цветом владельца сервера</div>
+                                <label class="switch">
+                                    <input type="checkbox" name="showchannelowner">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li class="setting">
+                                <div class="setting-text">Всегда подчёркивать ссылки</div>
+                                <label class="switch">
+                                    <input type="checkbox" name="showlinks">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p class="setting-header">Специальные возможности</p>
+                        <ul class="settings-item">
+                            <li class="setting">
+                                <div class="setting-text">Отправка сообщений при нажатии Enter</div>
+                                <label class="switch">
+                                    <input type="checkbox" name="entermsg">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li class="setting">
+                                <div class="setting-text">Скрывать имена участников каналов</div>
+                                <label class="switch">
+                                    <input type="checkbox" name="hidenames">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="channels-settings" id="channels-settings">
+        <div class="mini-author-profile">
+            <img src="./img/users/11.png" class="mini-author-profile-img" alt="">
+            <div class="mini-author-profile-text">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <ul class="settings-list"></ul>
+        <div class="settings-bottom">
+            <h3><a href="/">SmirkChat © 2024</a></h3>
+            <p>Создано <a href="https://github.com/shizuketsu">Shizu</a></p>
+        </div>
+    </div>
+    <div class="dim-overlay"></div>
+    <script src="./scripts/dom/setSettings.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./scripts/dom/substr.js"></script>
+    <script src="./scripts/api/blockLS.js"></script>
+    <script src="./scripts/api/getProfileInfo.js"></script>
+    <script src="./scripts/dom/loadAuthorProfile.js"></script>
+    <script src="./scripts/dom/settingsList.js"></script>
+    <script src="./scripts/dom/settingsChannelsless.js"></script>
+</body>
+</html>
