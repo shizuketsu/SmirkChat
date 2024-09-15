@@ -270,7 +270,7 @@ app.post('/register', async (req, res) => {
     
                 const hash = await bcrypt.hash(pass, 10);
     
-                db.query('INSERT INTO users (userName, email, password, bio, servers, ip, friends, friendsReq, friendsReqOutgoing) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', [userName, email, hash, 'Привет! Я новичок.', '', req.clientIp, '', '', ''], (err, results) => {
+                db.query('INSERT INTO users (userName, email, password, bio, servers, ip, friends, friendsReq, friendsReqOutgoing, blockls) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [userName, email, hash, 'Привет! Я новичок.', '', req.clientIp, '', '', '', '0'], (err, results) => {
                     if (err) throw err;
     
                     db.query('SELECT * FROM users WHERE email = ?', [email], async (err, r) => {
