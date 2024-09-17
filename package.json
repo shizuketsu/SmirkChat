@@ -5,17 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "none"
+    "url": "https://github.com/shizuketsu/SmirkChat/"
   },
   "keywords": [
-    "s"
+    "socket.io", "express.js", "telegram", "chatting"
   ],
   "author": "shizuketsu",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.1659.0",
     "bcryptjs": "^2.4.3",
