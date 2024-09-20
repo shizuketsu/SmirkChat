@@ -333,3 +333,13 @@ footer {
 .readonly-checkbox {
     color: #434343;
 }
+
+@media (max-width:900px) {
+    .go-to-Main-Page {
+        fill: #343434;
+    }
+
+    .go-to-Main-Page:hover {
+        background-color: #e5e5e5;
+    }
+}
